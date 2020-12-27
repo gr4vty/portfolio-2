@@ -4,109 +4,25 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-/*
-.card-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #1d1d1d;
-  min-height: 100vh;
-}
 
-.card-container {
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex: 0 1 300px; /*  No stretching: */
-/*
-
-.card-container .card-card::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  width: 50%;
-  background: rgba(243, 209, 57, 0.109);
-  pointer-events: none;
-  flex: 0 1 300px;
-}
-
-.card-container .card-card .content {
-  padding: 30px;
-  text-align: center;
-}
-
-.card-container .card-card .content h2 {
-  position: absolute;
-  right: 30px;
-  font-size: 4rem;
-  font-weight: 800;
-  color: #8022cc;
-  z-index: 1;
-  opacity: 0.1;
-  transform: 0.5s;
-}
-
-.card-container .card-card:hover .content h2 {
-  opacity: 0.9;
-  transform: translateY(-90px);
-}
-.card-container .card-card .content h3 {
-  position: relative;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  z-index: 2;
-  opacity: 0.5;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-
-.card-container .card-card:hover .content h3 {
-  opacity: 1;
-}
-.card-container .card-card .content p {
-  position: relative;
-  font-size: 0.9rem;
-  color: whitesmoke;
-  z-index: 2;
-  opacity: 0.5;
-  font-weight: 300;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-
-.card-container .card-card:hover .content p {
-  opacity: 1;
-}
-
-.card-container .card-card .content a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 15px;
-  background: #fff;
-  color: red;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-} */
 body {
   background: #0f0f0f;
 }
+
+/* Hover neon cards effect */
 .card1-body {
   text-align: center;
 }
+
 .card1 {
   position: relative;
   height: 500px;
   background: rgb(3, 33, 58);
   display: flex;
-  padding-top: 100px;
+  padding-top: 60px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 20px 50px rgba(25, 31, 34, 0.699);
+  box-shadow: 0 20px 50px rgba(9, 71, 241, 0.185);
   color: aliceblue;
   overflow: hidden;
 }
@@ -117,7 +33,7 @@ body {
   top: 2px;
   left: 2px;
   bottom: 2px;
-  width: 50%;
+  width: 30%;
   background: rgba(199, 199, 199, 0.109);
   pointer-events: none;
 }
@@ -272,4 +188,40 @@ body {
   100% {
     transform: translateY(-100%);
   }
+}
+
+/* Slide Icons Effect */
+
+.ulSocial {
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.liSocial {
+  list-style: none;
+  cursor: pointer;
+}
+
+.liSocial a {
+  text-decoration: none;
+}
+
+.liSocial a i {
+  font-size: 6rem;
+}
+
+.liSocial a .discord {
+  color: rgb(60, 0, 128);
+}
+.liSocial a .yt {
+  color: rgb(175, 6, 0);
+}
+.liSocial a .fb {
+  color: rgb(37, 114, 238);
+}
+.liSocial a .insta {
+  background: linear-gradient(to top, #f15267, #ff7d27, #d831ca);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
