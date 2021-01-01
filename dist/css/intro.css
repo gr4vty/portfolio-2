@@ -1,0 +1,71 @@
+. {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    -30deg,
+    #cecece 0%,
+    #1182c8 50%,
+    #051622 50%,
+    #1a1a1a 100%
+  );
+  filter: hue-rotate(120deg);
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.banner {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(246, 246, 246, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 45px #00000004;
+}
+
+.bannerL {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(246, 246, 246, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 45px #00000004;
+  align-self: flex-end;
+}
+
+.bannerD {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(246, 246, 246, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 45px #00000004;
+  align-self: flex-start;
+}
