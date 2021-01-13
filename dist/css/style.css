@@ -28,7 +28,7 @@ body {
 }
 .card1:hover {
   transform: 1s;
-  box-shadow: 0 0 60px rgba(137, 195, 177, 0.692);
+  box-shadow: 0 0 60px rgba(137, 195, 177, 0.419);
 }
 
 .card1::before {
@@ -43,7 +43,7 @@ body {
 }
 
 .card1 .card-text {
-  padding: 30px;
+  padding: 25px;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ body {
   color: #5a5646;
   z-index: 1;
   opacity: 0.1;
-  transform: 0.5s;
+  transition: 0.5s;
 }
 
 .card1:hover h2 {
