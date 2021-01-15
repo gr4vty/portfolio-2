@@ -5,3 +5,7 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").fadeIn();
 
 });
+
+$(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
