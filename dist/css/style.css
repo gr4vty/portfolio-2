@@ -5,11 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 body {
   background: #051622;
+  overflow-x: hidden;
 }
 
 /* Hover neon cards effect */
@@ -29,7 +29,7 @@ body {
 }
 .card1:hover {
   transition: 1s;
-  box-shadow: 0 50px 60px rgba(137, 195, 177, 0.419);
+  box-shadow: 0 10px 60px rgba(137, 195, 177, 0.419);
 }
 
 .card1::before {
@@ -264,7 +264,7 @@ body {
 .nav div.logo a {
   text-decoration: none;
   color: #deb992;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 .nav div.logo a:hover {
@@ -577,6 +577,19 @@ body {
 }
 .mastHeadPara {
   color: #deb9927c;
+  font-size: 1.1rem;
 }
-
+.mastHeadPic {
+  height: 75vh;
+  width: auto;
+}
 /* lightbox css */
+
+.vignette {
+  width: 80%;
+  margin: 1em auto;
+  box-shadow: 50px 50px 113px #0a0a0a inset, -50px -50px 110px #1a1b1a inset;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
