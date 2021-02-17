@@ -17,7 +17,7 @@ hr {
 }
 
 .body {
-  background-color: #00001102;
+  background-color: #03011d7a;
 }
 
 /*============== 
@@ -90,7 +90,7 @@ main {
 }
 
 .fa-primary {
-  color: #db5019;
+  color: #db19bb;
 }
 
 .fa-secondary {
@@ -137,8 +137,8 @@ main {
     width: 100vw;
     height: 5rem;
     justify-content: center;
-    --bg-primary: #1e77b3dc;
-    --bg-secondary: #9b3212;
+    --bg-primary: #b31e86dc;
+    --bg-secondary: #47129b;
   }
 
   .logo {
@@ -199,8 +199,8 @@ main {
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #ececec;
-  --bg-primary: #1e77b37c;
-  --bg-secondary: #9b3212af;
+  --bg-primary: #4b1eb37c;
+  --bg-secondary: #8f0835af;
 }
 
 .light {
@@ -237,13 +237,12 @@ main {
 MASTHEAD 
 ===========*/
 .mastHead {
-  display: fixed;
-  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 .mastHead h1 {
   color: #deb992;
+  font-size: 1.6rem;
 }
 .mastHeadPara {
   color: #deb992c7;
@@ -254,9 +253,8 @@ MASTHEAD
   position: fixed;
   z-index: -1;
   display: flex;
-  justify-content: center;
-  align-self: center;
   width: 100%;
+  height: 100vh;
 }
 
 /* ==================
@@ -269,7 +267,7 @@ Hover neon cards effect
 .card1 {
   position: relative;
   height: 500px;
-  background: #deb992;
+  background: #6f00ffd3; /* Card Color */
   display: flex;
   padding-top: 60px;
   justify-content: center;
@@ -302,7 +300,7 @@ Hover neon cards effect
   right: 30px;
   font-size: 4rem;
   font-weight: 800;
-  color: #413e3e;
+  color: #19aedb; /* Card Number Color */
   z-index: 1;
   opacity: 0.1;
   transition: 0.5s;
@@ -315,7 +313,7 @@ Hover neon cards effect
 .card1 h5 {
   position: relative;
   font-size: 1.7rem;
-  color: #413e3e;
+  color: #e2d411; /* Card Title Color */
   z-index: 2;
   opacity: 0.5;
   letter-spacing: 1px;
@@ -331,7 +329,7 @@ Hover neon cards effect
 .card1 p {
   position: relative;
   font-size: 0.9rem;
-  color: #161515;
+  color: #e2e2e2; /* Card Text Color*/
   z-index: 2;
   opacity: 0.5;
   font-weight: 300;
@@ -784,4 +782,7 @@ Hover Icons Effect
 .affix {
   padding: 0;
   background-color: #04101a;
+}
+.mt-15 {
+  margin-top: 150px;
 }
