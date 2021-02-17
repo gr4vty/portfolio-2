@@ -1,8 +1,0 @@
-DarkBlue
-#051622
-
-Gold Color
-#deb992
-
-Green Color
-#1BA098
