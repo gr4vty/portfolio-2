@@ -88,13 +88,12 @@ main {
   min-width: 2rem;
   margin: 0 1.5rem;
 }
-
 .fa-primary {
-  color: #db19bb;
+  color: #f0f32f;
 }
 
 .fa-secondary {
-  color: #31acd1;
+  color: #ffa600;
 }
 
 .fa-primary,
@@ -199,8 +198,8 @@ main {
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #ececec;
-  --bg-primary: #0b08a377;
-  --bg-secondary: #8f0835af;
+  --bg-primary: #3108a377;
+  --bg-secondary: #ca2c61e8;
 }
 
 .light {
@@ -267,7 +266,7 @@ Hover neon cards effect
 .card1 {
   position: relative;
   height: 500px;
-  background: #df1d573f; /* Card Color */
+  background: #ca2c6198; /* Card Color */
   display: flex;
   padding-top: 60px;
   justify-content: center;
@@ -468,7 +467,7 @@ ABOUT ME
 }
 
 .aboutMePara {
-  color: #deb992ce;
+  color: #e0e0e0ce;
 }
 /*================
 Hover Icons Effect 
@@ -824,7 +823,7 @@ Hover Icons Effect
 }
 
 .pageNav {
-  color: #35a3e2;
+  color: #e2d411;
   position: absolute;
   display: block;
   font-size: 6rem;
