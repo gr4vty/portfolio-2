@@ -95,11 +95,9 @@ main {
 
 .fa-secondary {
   color: #ffa600;
-}
-
-.fa-secondary {
   transition: var(--transition-speed);
 }
+
 
 .logo {
   font-weight: bold;
@@ -830,7 +828,6 @@ Hover Icons Effect
   margin-top: 235px;
   padding: 0;
   right: 1%;
-
   transform: rotate(90deg);
 }
 
