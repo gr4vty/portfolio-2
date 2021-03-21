@@ -196,7 +196,7 @@ main {
   --text-primary: #ffffff;
   --text-secondary: #ececec;
   --bg-primary: #3108a377;
-  --bg-secondary: #ca2c61e8;
+  --bg-secondary: #f6107be8;
 }
 
 .light {
@@ -236,7 +236,7 @@ MASTHEAD
   align-items: center;
   height: 100vh;
 }
-.mastHead h1 {
+.mastHead h2 {
   color: #ffffffe5;
   font-size: 1.6rem;
 }
@@ -251,6 +251,11 @@ MASTHEAD
   display: flex;
   width: 100%;
   height: 100vh;
+}
+
+.seoH1 {
+  font-size: 3rem;
+  color: #e2d411;
 }
 
 /* ==================
@@ -471,8 +476,9 @@ Hover Icons Effect
 =================*/
 
 .ulSocial {
-  padding-top: 100px;
+  padding-top: 0;
   padding-left: 170px;
+  margin-bottom: 100px;
 }
 
 .liSocial {
@@ -514,6 +520,15 @@ Hover Icons Effect
   .ulSocial {
     padding-left: 5px;
   }
+}
+
+.socialHeader {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  color: #e2d411;
 }
 
 /* Home section */
@@ -851,7 +866,10 @@ Hover Icons Effect
 
 .mePic {
   position: relative;
-  height: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #container {
@@ -861,4 +879,38 @@ Hover Icons Effect
 #inner {
   transition: transform 0.3s;
   -webkit-transition: transform 0.3s;
+}
+
+/* MAP CODE */
+
+.map-container-section {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-container-section iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact1 {
+  background-color: #0a96e70c;
+  color: rgba(229, 236, 240, 0.952);
+}
+
+.contact2 {
+  opacity: 70%;
+  background-color: #f6107bd2;
+}
+.contact2:hover {
+  background-color: #ff0077;
+}
+
+.btn-outline-pink:hover {
+  border-radius: 50px;
+  transition: 0.8s;
 }
