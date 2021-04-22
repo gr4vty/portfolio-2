@@ -489,39 +489,42 @@
             <div class="row">
                 <div class="col-lg-5 mb-lg-0 mb-4">
                     <div class="card contact1">
-                        <div class="card-body ">
-                            <!-- Header -->
-                            <div class="form-header contact2">
-                                <h3 class="mt-2"><i class="fas fa-envelope"></i>&nbsp; Contact Form </h3>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="card-body ">
+                                <!-- Header -->
+                                <div class="form-header contact2">
+                                    <h3 class="mt-2"><i class="fas fa-envelope"></i>&nbsp; Contact Form </h3>
+                                </div>
+                                <p class="text-white-25">Use the form below to contact me!</p>
+                                <!-- Body -->
+
+                                <div class="md-form pure-form pure-form-stacked" id="gform"
+                                    data-email="form_email@example.com"
+                                    action="https://script.google.com/macros/s/AKfycbzPckGCP3Y0N60yYZgJIPWLzMY8q5FLep0eWV-btKKYz5IdL94ipLiSaExfAMOvrCSAyw/exec">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" id="name" class="form-control">
+                                    <label for="name">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="text" id="form-email" class="form-control">
+                                    <label for="email">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-tag prefix grey-text"></i>
+                                    <input type="text" id="form-Subject" class="form-control">
+                                    <label for="Subject">Subject</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                    <textarea id="message" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="form-text">Send message</label>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-outline-pink">Submit</button>
+                                </div>
                             </div>
-                            <p class="text-white-25">Use the form below to contact me!</p>
-                            <!-- Body -->
-                            <div class="md-form pure-form pure-form-stacked" id="gform" data-netlify="true"
-                                method="POST" data-email="form_email@example.com"
-                                action="https://script.google.com/macros/s/AKfycbzPckGCP3Y0N60yYZgJIPWLzMY8q5FLep0eWV-btKKYz5IdL94ipLiSaExfAMOvrCSAyw/exec">
-                                <i class="fas fa-user prefix grey-text"></i>
-                                <input type="text" id="name" class="form-control">
-                                <label for="name">Your name</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="text" id="form-email" class="form-control">
-                                <label for="email">Your email</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-tag prefix grey-text"></i>
-                                <input type="text" id="form-Subject" class="form-control">
-                                <label for="Subject">Subject</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                <textarea id="message" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="form-text">Send message</label>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-outline-pink">Submit</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
 
                 </div>
