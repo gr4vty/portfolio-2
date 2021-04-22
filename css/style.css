@@ -131,8 +131,9 @@ main {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 4.2rem;
     justify-content: center;
+    font-size: 0.8rem;
     --bg-primary: #df1d57e1;
     --bg-secondary: #47129b;
   }
