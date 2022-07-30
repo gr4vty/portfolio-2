@@ -7,13 +7,11 @@
   font-family: "Montserrat", sans-serif;
   /* overflow-x: hidden; */
 }
-
 html {
   overflow-x: hidden;
 }
-
 body {
-  background: #4b5320;
+  background: #000011;
   overflow-x: hidden;
 }
 
@@ -22,7 +20,7 @@ hr {
 }
 
 .body {
-  background-color: #090f00d2;
+  background-color: #03011d7a;
 }
 
 /*============== 
@@ -95,11 +93,11 @@ main {
 }
 
 .fa-primary {
-  color: #9c1d12;
+  color: #f0f32f;
 }
 
 .fa-secondary {
-  color: #ceae23;
+  color: #ffa600;
   transition: var(--transition-speed);
 }
 
@@ -139,8 +137,8 @@ main {
     height: 4.2rem;
     justify-content: center;
     font-size: 0.8rem;
-    --bg-primary: #81613c;
-    --bg-secondary: #4b5320;
+    --bg-primary: #df1d57e1;
+    --bg-secondary: #47129b;
   }
 
   .logo {
@@ -201,8 +199,8 @@ main {
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #ececec;
-  --bg-primary: #81613c;
-  --bg-secondary: #4b5320;
+  --bg-primary: #3108a377;
+  --bg-secondary: #f6107be8;
 }
 
 .light {
@@ -261,7 +259,7 @@ MASTHEAD
 
 .seoH1 {
   font-size: 3rem;
-  color: #ffffff;
+  color: #e2d411;
 }
 
 /* ==================
@@ -274,7 +272,7 @@ Hover neon cards effect
 .card1 {
   position: relative;
   height: 500px;
-  background: #81613cb0; /* Card Color */
+  background: #ca2c6198; /* Card Color */
   display: flex;
   padding-top: 60px;
   justify-content: center;
@@ -282,8 +280,9 @@ Hover neon cards effect
   overflow: hidden;
 }
 .card1:hover {
-  transition: 2s;
-  box-shadow: 0 3px 100px #0f3605c0; /* shadow Color */
+  transition: 1s;
+  box-shadow: 0 3px 100px #368fcac0;
+  background: #df1d57a4;
 }
 
 .card1::before {
@@ -307,7 +306,7 @@ Hover neon cards effect
   right: 30px;
   font-size: 4rem;
   font-weight: 800;
-  color: #6e6e6e; /* Card Number Color */
+  color: #19aedb; /* Card Number Color */
   z-index: 1;
   opacity: 0.1;
   transition: 0.5s;
@@ -320,7 +319,7 @@ Hover neon cards effect
 .card1 h5 {
   position: relative;
   font-size: 1.7rem;
-  color: #dadada; /* Card Title Color */
+  color: #e2d411; /* Card Title Color */
   z-index: 2;
   opacity: 0.5;
   letter-spacing: 1px;
@@ -339,7 +338,7 @@ Hover neon cards effect
   font-size: 0.8rem;
   color: #e2e2e2; /* Card Text Color*/
   z-index: 2;
-  opacity: 1;
+  opacity: 0.5;
   font-weight: 500;
   letter-spacing: 1px;
   transition: 0.5s;
@@ -347,14 +346,14 @@ Hover neon cards effect
 }
 
 .card1:hover p {
-  opacity: 0.05;
+  opacity: 1;
 }
 
 .card1 a {
   display: inline-block;
   margin-top: 15px;
   padding: 8px 15px;
-  background: #374d04;
+  background: #2874bb;
   color: rgb(236, 236, 236);
   text-decoration: none;
   text-transform: uppercase;
@@ -382,30 +381,6 @@ Hover neon cards effect
   height: 3px;
   background: linear-gradient(to right, transparent, #0a96e7);
   animation: animate1 2s linear infinite;
-}
-
-.card2:hover {
-  background: url(../images/portfolioBG.png); /*Hover Color*/
-}
-
-.card3:hover {
-  background: url(../images/imageryBG.png); /*Hover Color*/
-}
-
-.card4:hover {
-  background: url(../images/childrenBG.png); /*Hover Color*/
-}
-
-.card5:hover {
-  background: url(../images/eCommerceBG.png); /*Hover Color*/
-}
-
-.card6:hover {
-  background: url(../images/cardBG.png); /*Hover Color*/
-}
-
-.card7:hover {
-  background: url(../images/templateBG.png); /*Hover Color*/
 }
 @keyframes animate1 {
   0% {
@@ -560,6 +535,267 @@ Hover Icons Effect
   color: #e2d411;
 }
 
+/* Home section */
+
+/* .home {
+  width: 100%;
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background: none;
+  clip-path: polygon(0% 100%, 110% 0%, 0% 0%); 
+  clip-path: circle(175vh at 80% -80vh); 
+  background-image: url(https://images.wallpaperscraft.com/image/octopus_underwater_world_art_134420_3840x2160.jpg); 
+  z-index: -1;
+} */
+
+/* .navTrigger {
+  display: none;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navTrigger {
+    display: block;
+  }
+  .nav div.logo {
+    margin-left: 15px;
+  }
+  .nav div.main_list {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav div.show_list {
+    height: auto;
+    display: none;
+  }
+  .nav div.main_list ul {
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #04101a;
+    background-position: center top;
+  }
+  .nav div.main_list ul li {
+    width: 100%;
+    text-align: right;
+  }
+  .nav div.main_list ul li a {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .nav div.media_button {
+    display: block;
+  }
+}
+
+.navTrigger {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+}
+
+.navTrigger i {
+  background-color: #deb992;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes inM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes outM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes outM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes inT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes inT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes outT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes inBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes inBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes outBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+} */
+
 .affix {
   padding: 0;
   background-color: #04101a;
@@ -573,7 +809,7 @@ Hover Icons Effect
 }
 
 #services .hoverSkill {
-  opacity: 70%;
+  opacity: 30%;
 }
 #services .hoverSkill:hover {
   transform: scale(1.2);
@@ -601,7 +837,7 @@ Hover Icons Effect
 }
 
 .pageNav {
-  color: #81613c;
+  color: #e2d411;
   position: absolute;
   display: block;
   font-size: 6rem;
@@ -670,10 +906,10 @@ Hover Icons Effect
 
 .contact2 {
   opacity: 70%;
-  background-color: #81613c;
+  background-color: #f6107bd2;
 }
 .contact2:hover {
-  background-color: #43610c;
+  background-color: #ff0077;
 }
 
 .btn-outline-pink:hover {
